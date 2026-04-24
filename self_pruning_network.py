@@ -95,7 +95,7 @@ def train_model(lambda_sparse):
     model = PrunableNet()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
     criterion = nn.CrossEntropyLoss()
-    for epoch in range(5):
+    for epoch in range(3):
         model.train()
         total_loss = 0
         for images, labels in train_loader:
